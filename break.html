@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    
+	<meta property="og:url" content="http://www.resistancecranes.com/index.html" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="#resistancecranes" />
+	<meta property="og:description" content="$10,000 for refugees and immigrants. 1000 paper cranes. 1 day." />
+	<meta property="og:image" content="http://www.resistancecranes.com/facebook.jpg" />
+	
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@matthewmarco" />
+	<meta name="twitter:title" content="I support #resistancecranes: $10,000 for refugees and immigrants. 1000 paper cranes. 1 day." />
+	<meta name="twitter:description" content="Buy a limited-edition paper crane, support the NILC and IRC." />
+	<meta name="twitter:image" content="http://www.resistancecranes.com/twitter.jpg" />	
+	
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet"> 
+	<link rel="stylesheet" href="quezon.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" href="resistanceisnow.css" type="text/css" charset="utf-8" />
+	
+	<title>#resistancecranes</title>
+
+<style type="text/css">
+#top {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: box;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	margin : 0;
+	padding : 0;
+}
+H2 {
+	width : 900px;
+	text-align : center;
+	color : #fff;
+	font-size : 2em;
+	line-height : 1;
+}
+
+H4 {
+	width : 1000px;
+	text-align : center;
+	color : #bbb;
+	font : 1.5em/1 Anton, sans-serif;
+	margin : 0 0 .3em;
+	padding : 0;
+}
+
+STRONG {
+	font-weight : normal;
+	color : white;
+}
+#nope {
+	width : 1000px;
+}
+</style>
+
+</head>
+  
+<body ng-app="resistancecranes">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fixed">
+<h1>#resistancecranes</h1>
+</div>
+
+
+<div id="top">
+<div id="nope">
+<h2>We&rsquo;re taking a break</h2>
+
+<div id="progress" ng-controller="ProgressController">
+
+	<div class="live-money">
+	<h3>Since 12 pm EST February 25, we&rsquo;ve raised</h3>
+	<p>{{raisedString}} of {{raisedGoalString}}</p>
+	<div class="money progress-bar">
+    <div class="progress-tracker" style="width: {{raisedPercentageString}}"></div>
+    <span>{{raisedPercentageString}}</span>
+  </div>
+	</div>
+
+	<div class="live-cranes">
+	<h3>We&rsquo;ve folded</h3>
+	<p>{{cranesString}} paper cranes</p>
+	</div>
+
+	<div class="live-time">
+	<h3>Time left</h3>
+	<p>{{timeLeft}}</p>
+	</div>
+	
+
+
+</div>
+	
+
+<h4>Go to <strong>resistancecranes.com</strong> to show your support</h4>
+<h4>#resistancecranes</h4>
+</div>
+</div>
+
+
+<img src="facebook.jpg" style="display : none;"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+<script src="jquery.zoom.min.js"></script>
+<script src="scripts.js"></script>
+
+<script src="https://static-resistancecranes.herokuapp.com/app.js"></script>
+<script>initInventoryApp("https://notifier-resistancecranes.herokuapp.com")</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91415581-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+  </body>
+  </html>

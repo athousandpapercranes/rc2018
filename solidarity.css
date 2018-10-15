@@ -1,0 +1,646 @@
+
+		
+BODY {
+	margin: 0; padding: 0;
+	font-size: 1em;
+	background-color : #b6c4d0;
+	color : #393f44;
+	background: linear-gradient(-180deg, #b6c4d0, #eee);
+}
+
+A:link, A:visited {
+	color : #6b4026;
+}
+
+A:hover, A:active {
+	color : #984e27;
+}
+
+.fixed H1 {
+	margin: 0; padding: 0;
+	text-shadow: 0px 0px 3em #888;	
+}
+
+.fixed {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: box;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	z-index: -1;
+	color : #fafafa;
+	text-align: center;
+	opacity : .2;
+	font: 6.5vw/.9 'Anton', sans-serif;
+}
+
+/*iPhone 7 kludge fix */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+	.fixed {
+		font-size : 6.2vw;
+		letter-spacing : -.01em;
+	}
+}
+
+/*iPhone 5 kludge fix */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) { 
+	.fixed {
+		font-size : 6.3vw;
+	}
+}
+
+HEADER {
+	margin : 0 0 4em; padding : 0;
+	width : 100%;
+	position : fixed; top : 0;
+	z-index : 10000;
+}
+
+HEADER UL {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    transition : 0.3s;
+}
+
+
+HEADER ul li {
+	float: left;
+	width : 33%;
+	margin : 0;
+	opacity : 0.9;
+}
+
+HEADER ul li:last-child {
+	float: left;
+	width : 34%;
+}
+
+HEADER ul li a:link, HEADER ul li a:visited {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    margin : 0;	
+    padding: 1.2em 0;
+    width : 100%;
+    text-align : center;
+	text-decoration: none;
+    transition: 0.3s;
+    font: 1.2em/1.2 'Anton', sans-serif;
+    letter-spacing: .01em;
+}
+
+HEADER UL li a:hover, HEADER UL li a:active {
+	background-color: #393f44;
+	color : #fff;
+}
+
+HEADER UL LI SMALL {
+	font-size : 1em; color : #748393;
+}
+
+HEADER.changeColor {
+	box-shadow: 0px 0px 20px #191919;
+	border-bottom : 1px solid #1a131b;
+}
+
+HEADER.changeColor UL {
+    background-color: #282e34;
+}
+
+
+HEADER.changeColor ul li a:link, HEADER.changeColor ul li a:visited {
+    margin : 0;
+    color: #f2f2f2;
+}
+
+HEADER.changeColor UL li a:hover, HEADER.changeColor UL li a:active {
+	background-color: #393f44;
+	color : #fff;
+}
+
+HEADER.changeColor UL LI SMALL {
+	color : #bbcbdf;
+}
+
+.centered {
+	text-align : center;
+	width : 100%;
+}
+
+#support {
+	max-width : 66em;
+	height : 35em;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+  	-webkit-flex-flow: column wrap;
+	justify-content: stretch;
+	flex-flow : column wrap;
+	padding : 4.2em 1em 0 0;
+	margin : 0 auto;
+	text-align : left;
+}
+
+#support P {
+	margin : 0 0 1em;
+	line-height : 1.4;
+	max-width : 30em;
+	color : #282e34;
+}
+
+#support .image {
+	flex-basis : 2;
+	height : 35em;
+}
+
+#support .image IMG {
+	display : block;
+	max-width : 30em;
+	margin : 0;
+	padding : 0;
+}
+
+
+#support .headline {
+	margin : 4.2em 0 0;
+	-webkit-align-self : flex-end;	
+	align-self : flex-end;	
+	width : 47%;
+	flex-basis : 1;
+	
+}
+
+#support .description {
+	margin : 2em 0 0;	
+	-webkit-align-self : flex-end;	
+	align-self : flex-end;	
+	width : 47%;
+	flex-basis : 1;
+	
+}
+
+#support P.price {
+	margin : 0 0 2.8em;
+}
+
+#support .description P:nth-child(4) {
+	float : left; margin-right : 1em;
+}
+
+
+
+#support FORM {
+	max-width : 15em;	
+}
+
+#support H2.dollars {
+	text-indent : -.46em;
+	padding-left : 0;
+	font-size : 3em;
+	color : #282e34;
+}
+
+#support H2 {
+	font: 3em/1 'Anton', sans-serif;	
+	margin : 0 0 0.1em; padding : 0;
+	color : #393f44;
+}
+
+#support P SMALL {
+	font-style : italic;
+}
+
+#support P SMALL EM {
+	font-style : normal;
+}
+
+#about, #stream {
+	max-width : 50em;
+	padding : 8.4em 1em 0em;		
+	margin : 0 auto;
+}
+
+#organizations, #cranes, #facts, #team, #help, #contact {
+	max-width : 50em;
+	padding : 1.4em .8em 0em;		
+	margin : 0 auto;
+}
+
+#organizations {
+	padding-top : 4.2em;
+}
+
+#about P {
+	text-indent : 1em;
+	font-size : 1.4em; line-height : 1.8;
+	margin : 0 0 1.4em;
+}
+
+#about H3+P {
+	text-indent : 0; margin-top : 0em;
+}
+
+#about H3+P::first-line {
+	font-variant : small-caps; letter-spacing : .1em;
+}
+
+#paper {
+	max-width : 50em;
+	margin : 0 auto 2.8em;
+	background : url("immigrantkitchen.jpg") 50% 50% no-repeat;
+	background-size : cover;
+	height : 40vh; border : 1px solid #888;
+}
+
+#organizations .learnMore {
+	margin-top : 1.4em;
+}
+
+#team P, #cranes P, #stream P {
+	margin : 0 0 1.4em; max-width : 40em;
+}
+
+.col-group {
+	margin : 0; padding : 0 0 1.4em;
+    overflow: hidden;	
+}
+
+.col-group > div {  
+    float: left;
+    width: 50%;
+    padding : 0;	
+}
+
+#organizations .col-group > div img {
+	display : block;
+	margin: 0 auto 1em; 
+	max-height : 20vh; 
+}
+
+.col-group > div P {
+	padding-right : 1.6em;
+}
+
+H2 {
+	font: 1em/1 'Anton', sans-serif;
+}
+
+H3 {
+	font: 2.8em/1 'quezonregular', sans-serif;
+	color : #454859;
+	margin : 0 0 .5em;	
+}
+
+H4 {
+	font: 1.4em/1 'quezonregular', sans-serif;
+	color : #748393;
+	margin : 0 0 1em;
+}
+
+P, LI {
+	font: 1em/1.4 Georgia, Times, 'Times New Roman', serif;
+	margin : 0 0 1.4em;
+}
+
+ABBR {
+	font-size : 0.8em;
+	text-decoration : none;
+}
+
+FOOTER {
+	width : 100%;
+	margin : 2em 0 0; padding : 1em 0 3em;
+	background : #04183c url("footer.jpg") 50% 50% no-repeat; color : #b3defc;
+	background-size : cover;
+	border-top : 1px solid #04183c;
+/*	background : -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #092f71), color-stop(1, #04183c) );
+ 	background : -moz-linear-gradient( center top, #092f71 5%, #04183c 100% );				*/
+	text-align : center;
+}
+
+FOOTER H2 {
+	font-size : 6vw;
+	color : #fff;
+	opacity : .8;
+}
+
+#bottom {
+	max-width : 66em;
+/*	display: -webkit-flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: box;
+	display: flex;
+	flex-direction : row;
+	-webkit-justify-content : space-between;	
+	justify-content : space-between;	
+	align-items : text-end;*/
+	padding : 4.2em 1em 0 1em;
+	margin : 0 auto;
+	text-align : center;
+}
+
+#bottom P.rtt {
+	text-align : center;
+	margin : 0;
+	display : -webkit-flex;	
+	display : flex;	
+	-webkit-justify-content : center;	
+	justify-content : center;
+}
+
+#bottom P.rtt A:link, #bottom P.rtt A:visited {
+
+	margin : 0 auto;
+	text-align : center;
+	color : #748393;
+	text-decoration : none;
+	font : 1em/1 'Anton', sans-serif;
+	text-transform : uppercase;
+	letter-spacing : .03em;
+}
+
+#bottom P.rtt A:hover, #bottom P.rtt A:active {
+	color : #454859;
+}
+
+
+.rtt span {
+	display : block;
+	padding : 1.8em 0 1.3em 2.6em; margin : 0 auto;
+	text-align : left;
+	background : url("fist.png") left bottom no-repeat;
+	background-size : contain;
+}
+
+A.cta2:link, A.cta2:visited {
+	border-radius : 1.3em;
+	padding : .6em 1em .5em;
+	border : 1px dashed #6b4026;
+	text-decoration : none;
+    transition: 0.3s;	
+}
+
+A.cta2:hover, A.cta2:active {
+	border-radius : 1.3em;
+	padding : .6em 1em .5em;
+	border : 1px solid #6b4026;
+	background : #984e27;
+	color : #fff;
+	text-decoration : none;
+}
+
+#team P {
+	max-width : 40em;
+}
+
+@media (min-width: 700px) {
+
+#contact .cta2 {
+	padding-left : 3.5em;
+	background-image : url("cup.png");
+	background-repeat : no-repeat;
+	background-position : .9em 50%;
+	background-size : 2em;
+}
+}
+
+/* Mobile starts here */
+
+@media (max-width: 414px) {
+
+HEADER ul li {
+	float: left;
+	width : 36%;
+	margin : 0;
+}
+
+HEADER ul li:first-child {
+	float: left;
+	width : 26%;
+}
+
+HEADER ul li:last-child {
+	float: left;
+	width : 38%;
+}
+
+HEADER UL LI A:link, HEADER UL LI A:visited {
+	padding: 1.2em 0;
+	font: .9em/1 'Anton', sans-serif;	
+}
+
+	#support {
+		padding-top : 4.8em;
+		padding-left : .7em;
+		display : block;
+		height : auto;
+	}
+	
+	#support .image {
+		width : 100%;
+		height : 40vh;	
+		text-align : center;
+	}
+	
+	#support .image IMG {
+		height : 40vh;	
+		margin : 0 auto;
+	}	
+
+	#support .headline {
+		margin-top : 0;
+		width : 100%;		
+	}
+	
+	#support .description {
+		margin-top : 1em;
+		width : 100%;		
+	}
+	
+	#support P.price {
+		margin-bottom : 1em;
+	}
+	
+	#support H2 {
+		text-align : center;
+    	font-size : 2em; 	
+		margin : 0 0 0.2em;     	
+	}
+	
+	#support h2.dollars	{
+		font-size : 2.8em;
+		text-indent : 0;
+		padding-left : 0em;  	
+	}
+	
+	#support .cta2 {
+		display : block;
+		text-align : center;
+	}
+	
+	#about, #stream {
+		padding : 5.2em .7em 0em;		
+	}
+
+	#organizations, #cranes, #facts, #team, #help, #contact {
+		padding : 1em .7em 0em;		
+	}	
+	
+	#about P {
+		text-indent : 0;
+		font-size : 1.2em; line-height : 1.4;
+	}
+	
+	#paper {
+		height : 30vh;
+	}	
+	
+	.col-group P {
+		display : none;
+	}
+
+	#organizations P.learnMore {
+		display : block;
+		text-align : center;
+	}
+  
+	H3 {
+		font-size : 2.2em;
+	}
+  
+  	H4 {
+  		font-size : 1.6em;
+	}
+	
+	.col-group > div P {
+		padding-right : 0;
+		font-size : .8em;
+	}
+	
+	#questions .cta2 {
+		font-size : .8em;
+	}
+	
+}
+
+/* Phablet nonsense */
+
+@media (min-width: 415px) 
+and (max-width : 880px) {
+
+	#support {
+	max-width : 66em;
+	height : 38em;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+  	-webkit-flex-flow: row wrap;
+	flex-flow : row wrap;
+	-webkit-justify-content : space-between;
+	justify-content: space-between;
+	-webkit-align-items : flex-start;
+	align-items : flex-start;	
+	padding : 2.8em 1em 0;
+	}
+
+	#support .image {
+		width : 37%;
+		height : auto;
+		-webkit-align-self : flex-start;		
+		align-self : flex-start;
+		margin : 0;			
+	}
+	
+	#support .image IMG {
+		width : 100%;
+	}
+	
+	#support .headline {
+		width : 57%;
+		-webkit-align-self : flex-end;
+		align-self : flex-end;
+		margin : 5em 0 5em;
+	}
+	
+
+	#support .description {
+		width : 100%;
+		margin : -3em auto 0;
+		-webkit-align-self : flex-start;		
+		align-self : flex-start;
+		flex-basis : 2;	
+		text-align : center;		
+	}
+
+	#support .description DIV {
+		max-width : 30em;
+		margin : 0 auto 1em;
+		text-align : left;		
+	}
+	
+		#support .description P, #support .description P:nth-child(4) {
+		margin : 0 auto 1.5em;
+		text-align : left;		
+		float : none;
+	}	
+	
+
+	HEADER UL LI A:link, HEADER UL LI A:visited {
+		padding: 1.2em 0;
+		font: .9em/1 'Anton', sans-serif;	
+	}
+
+	#about, #stream {
+		padding : 5.6em 1em 0em;		
+	}
+
+#support H2.dollars {
+	text-indent : -.46em;
+	padding-left : 0;
+	font-size : 2.6em;
+	color : #282e34;
+}
+
+
+#support H2 {
+	font: 2.6em/1 'Anton', sans-serif;	
+	margin : 0 0 0.1em; padding : 0;
+	color : #393f44;
+}
+	
+	
+	#support .cta2 {
+		margin : 0 auto;
+		text-align : center;
+	}
+
+}

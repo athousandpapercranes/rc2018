@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    
+	<meta property="og:url" content="http://www.resistancecranes.com/index.html" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="#resistancecranes" />
+	<meta property="og:description" content="$10,000 for refugees and immigrants. 1000 paper cranes. 1 day." />
+	<meta property="og:image" content="http://www.resistancecranes.com/facebook.jpg" />
+	
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@matthewmarco" />
+	<meta name="twitter:title" content="I support #resistancecranes: $10,000 for refugees and immigrants. 1000 paper cranes. 1 day." />
+	<meta name="twitter:description" content="Buy a limited-edition paper crane, support the NILC and IRC." />
+	<meta name="twitter:image" content="http://www.resistancecranes.com/twitter.jpg" />	
+	
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet"> 
+	<link rel="stylesheet" href="resistanceisnow.css" type="text/css" charset="utf-8" />
+	
+	<title>#resistancecranes</title>
+
+<style type="text/css">
+
+H2.done {
+	font-size : 3em;
+	margin-bottom : 1em;
+	color : #fafafa;
+}
+
+H2.dollars, H2.thousandCranes, H2.oneNight {
+	color : #ddd;
+	opacity : .8;
+}
+
+@media (max-width : 667px) {
+#crane {
+	display : block;
+	height : auto;
+}
+}
+
+#crane {
+	height : 34.5em;
+}
+
+@media (min-width: 668px) 
+and (max-width : 771px) {
+#crane {
+	height : 39em;
+}
+
+}
+
+@media (min-width: 772px) 
+and (max-width : 900px) {
+#crane {
+	height : 37em;
+}
+
+}
+
+@media (min-width: 901px) 
+and (max-width : 990px) {
+#crane {
+	height : 36em;
+}
+
+}
+</style>
+
+</head>
+  
+<body ng-app="resistancecranes">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fixed">
+<h1>#resistancecranes</h1>
+</div>
+
+<!--<header>
+<ul>
+<li><a href="#stream">Stream <small>Live</small></a></li>
+<li><a href="#about">The&nbsp;Project</a></li>
+<li>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="ZMDACT3KCSN5W">
+<input type="submit" value="Buy Now" name="submit" title="Buy a paper crane to show your support!" class="buyNowHeader">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</li>
+
+</ul>
+</header>-->
+
+<div id="top">
+
+<div id="crane">
+<div id="bigCrane">
+</div>
+
+
+<div class="description">
+
+		<div class="headline">
+
+		<h2 class="done">We&rsquo;ve done it.</h2>	
+		<h2 class="dollars">$10,000 to aid refugees and immigrants.</h2>
+		<h2 class="thousandCranes">1000 paper cranes.</h2>
+		<h2 class="oneNight">1 day.</h2>
+						
+		</div>
+
+<p><em>With the help of local volunteers and allies across the world</em>, we met our goals of folding 1000 paper
+cranes and raising $10,000 in 24 hours for the National Immigration Law Center and International Rescue Committee of New York.</p>			
+
+
+<div class="fb">
+<div class="fb-share-button" data-href="http://www.resistancecranes.com/" data-layout="button_count" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.resistancecranes.com%2F&amp;src=sdkpreparse">Share</a></div>
+</div>
+
+
+</div>
+
+
+</div>
+
+<div id="progress" ng-controller="ProgressController">
+
+	<div class="live-money">
+	<h3>On February 25&ndash;26, we raised</h3>
+	<p>$10,000 of {{raisedGoalString}}</p>
+	<div class="money progress-bar">
+    <div class="progress-tracker" style="width: {{raisedPercentageString}}"></div>
+    <span>{{raisedPercentageString}}</span>
+  </div>
+	</div>
+
+	<div class="live-cranes">
+	<h3>We folded</h3>
+	<p>1,000 paper cranes</p>
+	</div>
+
+	<div class="live-time">
+	<h3>Time left</h3>
+	<p>00:00:00</p>
+	</div>
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+</div>
+	
+
+<div class="goto-learn">
+	<p><a class="cta3" href="#about">Learn more about the project&nbsp;&amp;&nbsp;cranes</a></p>
+</div>
+
+</div>
+
+
+
+<div id="about">
+<h3>About the project</h3>
+
+<p>Resistance Cranes is a collaborative fundraising effort hosted by Christina Lee and Matthew Marc&oacute; to raise $10,000 ($5000 each) for the
+<a href="http://nilc.org">National Immigration
+Law Center</a> and <a href="https://www.rescue.org/united-states/new-york-ny">International Rescue Committee in New&nbsp;York</a>.</p>
+
+<img src="forkspoon.png" align="right" style="margin: 0 0 1em 2em; max-height : 9em; max-width : 30vw;" alt="" />
+
+<p>These organizations provide legal resources to immigrants and support the refugee resettlement in the United States:
+always critical but moreso in today&rsquo;s political climate, which is increasingly hostile to people escaping
+war-ravaged areas and people who come to the United States simply for better economic&nbsp;prospects.</p>
+
+
+<img src="tiffin.png" align="left" style="margin: 0 2em 1em 0; max-height : 7.2em; max-width : 30vw;" alt="" />
+
+<p>Inspired by the <a href="https://en.wikipedia.org/wiki/One_thousand_origami_cranes">Japanese legend</a>,
+for 24 hours starting at 12 pm <abbr title="Eastern Standard Time">EST</abbr> on Saturday, February 25, 2017,
+a small crew of volunteers are folding 1000 paper cranes in solidarity with immigrants and refugees who make
+their way to American shores in search of a new&nbsp;home.</p>
+</div>
+
+<div id="organizations">
+<h4>We are supporting</h4>
+
+<p>We are raising $10,000 ($5000 each) for these organizations:</p>
+    <div class="col-group">
+  		<div>
+<a href="https://www.nilc.org/about-us/what_we_do/" target="_blank"><img src="nilc.png" alt="National Immigration Law Center" /></a>
+<p>Established in 1979, the National Immigration Law Center (<abbr title="National Immigration Law Center">NILC</abbr>) is one of the leading organizations in the U.S. exclusively dedicated to defending and advancing the rights of low-income immigrants.</p>
+<p class="learnMore"><a class="cta2" href="https://www.nilc.org/about-us/what_we_do/">Learn&nbsp;more&nbsp;&rarr;</a></p>
+		</div>
+		<div>
+<a href="https://www.rescue.org/who-we-are" target="_blank`"><img src="irc.png" alt="International Rescue Committee of New York" /></a>		
+<p>The International Rescue Committee (<abbr title="International Rescue Committee">IRC</abbr>) helps people whose lives and livelihoods are shattered by conflict and disaster to survive, recover and regain control of their future.</p>
+<p class="learnMore"><a class="cta2" href="https://www.rescue.org/who-we-are">Learn&nbsp;more&nbsp;&rarr;</a></p>
+		</div>
+	</div>
+</div>
+
+<div id="cranes">
+<h4>The cranes</h4>
+
+<p>Limited edition of 1000 cranes. Folded dimensions are 4&times;4&times;7 inches, based on an
+original paper size of 6&times;6 inches. Cranes will be shipped flat.</p>
+<p>The custom paper design by artist Shing Yin Khor (detail below) recalls immigrant kitchens
+ &ndash; a mix of utensils and equipment from our countries of origin and lives in the United States.</p>
+ 
+ <div id="paperBorder">
+	<div id="paper">
+ 	<p>Hover to zoom in</p>
+ 	</p>
+	<img src="immigrantkitchen-sq.jpg" width="100%" alt="" />
+	</div>
+</div>
+
+</div>
+
+<div id="team">
+<h4>The team</h4>
+
+<img src="s.png" align="right" style="margin: 0 1em 1em 2em; max-height : 14.4em;" alt="" />
+
+<p><span><a href="http://www.twitter.com/sawdustbear">Shing Yin Khor</a></span> is a cartoonist, sculptor and installation artist.
+She has done two artist residencies with the National Park Service, and has been <a href="http://www.huffingtonpost.com/entry/shing-yin-khor-activist-art_us_5890d7b6e4b0522c7d3d8369">featured in The Huffington Post</a>. She immigrated
+to the United States at 16, becoming an American citizen at 28. When thinking about migration,
+peace, and home, she thinks of a very well-travelled rice&nbsp;cooker.</p>
+
+<img src="c.png" align="left" style="margin: 0 2em 1em 1em; max-height : 12em;" alt="" />
+
+<p><span><a href="http://www.twitter.com/nowowl">Christina Lee</a></span> is a product manager for an education company in Brooklyn. She is the daughter of an immigrant.
+Born as an American abroad, she moved to the United States when she was 12. When thinking about migration, peace,
+and home, she thinks of cooking her <a href="https://www.instagram.com/p/BP0mcsjgCII">mom&rsquo;s chicken curry</a> and the
+feeling of settling into a comfy bed after a long&nbsp;journey.</p>
+
+<img src="m.png" align="right" style="margin: 0 1em 1em 2em; max-height : 9.6em;" alt="" />
+
+<p><span><a href="http://www.twitter.com/matthewmarco/">Matthew Marc&oacute;</a></span> is a web designer. He immigrated
+to the United States at age 5 and became an American citizen at age 16. When thinking about migration,
+peace, and home, he thinks of how public transportation becomes a part of immigrants&rsquo; lives when
+they settle in new&nbsp;cities.</p>
+
+</div>
+
+
+
+
+<div id="contact">
+<h3>Any questions?</h3>
+<p><a class="cta2" href="mailto:donate@resistancecranes.com">Email donate@resistancecranes.com</a></p>
+</div>
+
+<div id="bottom">
+<p class="rtt"><a href="#top"><span> Return to top</span></a></p>
+</div>
+
+
+<img src="facebook.jpg" style="display : none;"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+<script src="jquery.zoom.min.js"></script>
+<script src="scripts.js"></script>
+
+<script src="https://static-resistancecranes.herokuapp.com/app.js"></script>
+<script>initInventoryApp("https://notifier-resistancecranes.herokuapp.com")</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91415581-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+  </body>
+  </html>

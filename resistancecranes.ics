@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:1.0
+BEGIN:VEVENT
+DTSTART:20170225T120000
+DTEND:20170226T120000
+LOCATION:resistancecranes.com
+DESCRIPTION:#resistancecranes is a fundraiser for refugees (IRC.org) and low-income immigrants (NILC.org). We're folding 1000 paper cranes in 1 night.
+SUMMARY:Support resistancecranes.com
+PRIORITY:3
+END:VEVENT
+END:VCALENDAR
