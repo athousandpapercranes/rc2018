@@ -1283,8 +1283,11 @@ H2.date {
 
 H2.dollars, H2.thousandCranes, H2.oneNight {
 	color : #fafafa;
-	opacity : .94;
 }
+
+H2.dollars { opacity : .94; }
+H2.thousandCranes { opacity : .89; }
+H2.oneNight { opacity : .84; }
 
 
 @media (max-width : 667px) {
