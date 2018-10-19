@@ -1286,8 +1286,8 @@ H2.dollars, H2.thousandCranes, H2.oneNight {
 }
 
 H2.dollars { opacity : .94; }
-H2.thousandCranes { opacity : .89; }
-H2.oneNight { opacity : .84; }
+H2.thousandCranes { opacity : .84; }
+H2.oneNight { opacity : .74; }
 
 
 @media (max-width : 667px) {
