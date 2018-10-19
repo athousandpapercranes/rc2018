@@ -1277,19 +1277,12 @@ H2.done {
 	color : #fafafa;
 }
 
-#itson {
-	font-size : 3em;
-	line-height : 1;
-	color : #fafafa;
-}
-
-
 H2.date {
 	margin-bottom : 1em;
 }
 
 H2.dollars, H2.thousandCranes, H2.oneNight {
-	color : #ddd;
+	color : #fafafa;
 	opacity : .8;
 }
 
