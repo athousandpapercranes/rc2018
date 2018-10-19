@@ -1277,6 +1277,13 @@ H2.done {
 	color : #fafafa;
 }
 
+H2#on {
+	font-size : 3em;
+	line-height : 1;
+	color : #fafafa;
+}
+
+
 H2.date {
 	margin-bottom : 1em;
 }
